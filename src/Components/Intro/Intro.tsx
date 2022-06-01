@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import logo from '../../img/777.jpg'
+import logo from '../../img/888.jpg'
 
 import cl from "./intro.module.scss";
 
