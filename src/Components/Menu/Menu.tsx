@@ -12,9 +12,9 @@ const Menu: FC<MenuProps> = ({ menuBar }) => {
   return (
     <div className={cl.menu}>
       <div className={cl.menu_content}>
-        {menuBar.map((item) => {
+        {menuBar.map((item, i) => {
           return (
-            <div className={cl.menu_icon}>
+            <div key={i} className={cl.menu_icon}>
               <a href="/" className={cl.menu_link}>
                 <div className={cl.icon}>{item.icon}</div>
                 <div className={cl.title}>{item.title}</div>

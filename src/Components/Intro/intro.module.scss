@@ -1,10 +1,12 @@
 .wrap {
   display: flex;
+  max-width: 450px;
   min-width: 360px;
   flex-direction: column;
   padding: 0.5rem;
   background-color: var(--ceramic);
   border-radius: 7px;
+  margin: 0 0.9em 0.9em 0;
 }
 .intro {
   display: flex;
@@ -69,9 +71,4 @@
       background-color: var(--latte);
     }
   }
-  // .intro_link:hover {
-  //   color: var(--latte);
-  //   transition: 0.3s all;
-  //   background-color: var(--ceramic);
-  // }
 }

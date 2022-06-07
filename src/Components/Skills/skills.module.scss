@@ -1,0 +1,43 @@
+.cont__wrap {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  // height: 100%;
+  padding: 0 1.5rem;
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0rem 3.0rem;
+    fill: var(--latte);
+    position: relative;
+    .content2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      h3 {
+        margin-bottom: 0.3rem;
+      }
+      p {
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    .content2::after {
+      content: "";
+      width: 100%;
+      height: 1.7px;
+      background: linear-gradient(150deg,#fff,var(--ceramic),#fff);
+      position: relative;
+      top: 5px;
+      left: 0px;
+    }
+    svg {
+      margin: .6rem 0;
+    }
+  }
+}
