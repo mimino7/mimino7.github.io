@@ -20,7 +20,7 @@ const Inform: FC<InformProps> = ({ infoBar }) => {
       {infoBar.map((cont, i) => {
         var k = 0;
         return (
-          <div key={i} className={cx(cl.inf_wrap, {[cl.active]: k === i})}>
+          <div key={i} className={cx(cl.inf_wrap, { [cl.active]: k === i })}>
             <div className={cl.inf_content}>
               <div className={cl.title}>
                 <h2>{cont.title}</h2>

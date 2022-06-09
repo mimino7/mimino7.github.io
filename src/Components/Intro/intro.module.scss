@@ -1,17 +1,18 @@
 .wrap {
   display: flex;
-  max-width: 450px;
+  max-width: 500px;
   min-width: 360px;
   flex-direction: column;
   padding: 0.5rem;
   background-color: var(--ceramic);
   border-radius: 7px;
-  margin: 0 0.9em 0.9em 0;
+  margin-bottom: 0.9rem;
 }
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100%;
   background-color: #fff;
   margin-top: 0.5rem;
   .intro_name {
@@ -53,6 +54,7 @@
   .intro_link {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 2rem;

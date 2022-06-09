@@ -1,8 +1,8 @@
 export interface IMenu {
-  icon: any,
-  title: string,
+  icon: any;
+  title: string;
 }
 export interface Iinfobar {
-  title: string,
-  content?: JSX.Element,
+  title: string;
+  content?: JSX.Element;
 }

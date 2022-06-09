@@ -11,8 +11,8 @@ function App() {
       <div className="cont__wrap">
         <div className="content">
           <Menu menuBar={menuBar} />
-          <Intro name={NAME_RESUME} prof={PROF_RESUME} social={social}/>
-          <Inform infoBar={infoBar}/>
+          <Intro name={NAME_RESUME} prof={PROF_RESUME} social={social} />
+          <Inform infoBar={infoBar} />
         </div>
       </div>
     </div>

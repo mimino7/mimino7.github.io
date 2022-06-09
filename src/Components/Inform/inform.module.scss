@@ -5,6 +5,7 @@
   max-width: 700px;
   background-color: #fff;
   margin-bottom: 0.9rem;
+  margin-left: 0.9rem;
   border-radius: 7px;
   padding-bottom: 2rem;
 
@@ -47,9 +48,10 @@
   display: flex;
 }
 
-@media screen and (min-width: 360px) and (max-width: 1100px) {
+@media screen and (min-width: 360px) and (max-width: 1000px) {
   .inf_wrap {
     min-width: 360px;
     max-width: 500px;
+    margin-left: 0;
   }
 }
