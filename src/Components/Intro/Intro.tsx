@@ -27,7 +27,7 @@ const Intro: FC<IntroProps> = ({ name, prof, social }) => {
           ))}
         </div>
         <div className={cl.intro_link}>
-          <a className={cl.link} href="CV-Mikhail.pdf">
+          <a className={cl.link} href="CV/CV-Mikhail.pdf">
             Скачать резюме
           </a>
         </div>

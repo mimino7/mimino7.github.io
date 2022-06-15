@@ -8,17 +8,17 @@ import { log } from "console";
 
 function App() {
   const [numMenu, setNumMenu] = useState(0);
- 
+
   const handleClick = (i: number) => {
     setNumMenu(i);
   };
   console.log(numMenu);
-  
+
   return (
     <div className="App">
       <div className="cont__wrap">
         <div className="content">
-          <Menu handleClick={handleClick} menuBar={menuBar} num={numMenu}/>
+          <Menu handleClick={handleClick} menuBar={menuBar} num={numMenu} />
           <Intro name={NAME_RESUME} prof={PROF_RESUME} social={social} />
           <Inform infoBar={infoBar} num={numMenu} />
         </div>
