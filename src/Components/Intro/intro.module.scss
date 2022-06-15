@@ -2,11 +2,13 @@
   display: flex;
   max-width: 500px;
   min-width: 360px;
+  // height: 87vh;
   flex-direction: column;
   padding: 0.5rem;
   background-color: var(--ceramic);
   border-radius: 7px;
   margin-bottom: 0.9rem;
+  position: relative;
 }
 .intro {
   display: flex;
