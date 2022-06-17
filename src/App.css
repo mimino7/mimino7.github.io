@@ -1,15 +1,17 @@
 .App {
   display: flex;
   justify-content: center;
-  /* height: 100vh; */
   font-size: 16px;
-  padding: 3rem 1rem;
+  width: 100%;
 }
 .cont__wrap {
   display: flex;
   min-width: 360px;
   max-width: 1200px;
+  padding: 2rem 1rem;
+  width: 100%;
 }
+
 .content {
   display: flex;
   flex-direction: row;
@@ -17,16 +19,40 @@
   width: 100%;
 }
 
-@media screen and (min-width: 280px) and (max-width: 1000px) {
+@media screen and (max-width: 910px) {
   .content {
-    display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 10% 0 20%;
+    align-items: center;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 0% 0 20%;
   }
 }
 
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 560px) {
   .App {
     font-size: 14px;
+    width: 100%;
+  }
+  .cont__wrap {
+    padding: 0rem 1rem;
+  }
+  .content {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .App {
+    font-size: 12px;
+  }
+  .cont__wrap {
+    padding: 3rem 0rem;
   }
 }

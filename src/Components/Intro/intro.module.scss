@@ -1,14 +1,14 @@
 .wrap {
   display: flex;
-  max-width: 500px;
-  min-width: 360px;
-  // height: 87vh;
+  width: 360px;
+  flex-grow: 0;
   flex-direction: column;
   padding: 0.5rem;
   background-color: var(--ceramic);
   border-radius: 7px;
   margin-bottom: 0.9rem;
   position: relative;
+  z-index: 22;
 }
 .intro {
   display: flex;
@@ -74,5 +74,16 @@
       transition: 0.3s all;
       background-color: var(--latte);
     }
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .wrap {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .wrap {
+    padding: 0;
   }
 }

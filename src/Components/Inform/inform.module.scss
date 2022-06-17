@@ -1,15 +1,12 @@
 .inf_wrap {
   display: flex;
-  flex: 1 1 auto;
+  flex-grow: 3;
   display: none;
-  min-width: 500px;
-  max-width: 700px;
   background-color: #fff;
   margin-bottom: 0.9rem;
   margin-left: 0.9rem;
   border-radius: 7px;
-  padding-bottom: 2rem;
-
+  transition: 0.5s all;
   .inf_content {
     display: flex;
     flex-direction: column;
@@ -19,13 +16,10 @@
 
     .title {
       display: flex;
-      width: 650px;
       padding: 1.9rem 2.5rem;
       margin-bottom: 2.3rem;
       z-index: 2;
       text-transform: uppercase;
-      h2 {
-      }
     }
     .title::after {
       content: "";
@@ -50,21 +44,48 @@
 }
 .active {
   display: flex;
+  animation-name: appear;
+  animation-duration: 1s;
 }
 
-@media screen and (min-width: 360px) and (max-width: 1000px) {
-  .inf_wrap {
-    display: flex;
-    min-width: 360px;
-    max-width: 500px;
-    margin-left: 0;
-    min-height: 560px;
+// @keyframes disappear {
+//   100% {
+//     opacity: 0;
+//     transform: translate3d(70%, 0, 0);
+//   }
+//   0% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translate3d(-60%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
-@media only screen and (max-width: 759px) {
+
+@media screen and (max-width: 910px) {
+  .inf_wrap {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    min-height: 560px;
+    .inf_content {
+      padding-bottom: 4rem;
+    }
+  }
+}
+@media only screen and (max-width: 560px) {
   .inf_wrap {
     .inf_content {
       padding-top: 4rem;
+      padding-bottom: 18rem;
     }
   }
 }

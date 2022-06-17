@@ -4,7 +4,6 @@ import "./App.css";
 import { infoBar, menuBar, NAME_RESUME, PROF_RESUME, social } from "./DB";
 import Menu from "./Components/Menu/Menu";
 import Inform from "./Components/Inform/Inform";
-import { log } from "console";
 
 function App() {
   const [numMenu, setNumMenu] = useState(0);
