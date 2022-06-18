@@ -36,3 +36,8 @@
     background-color: var(--latte);
   }
 }
+@media only screen and (max-width: 560px) {
+  .cont__wrap {
+    padding: 0 2rem;
+  }
+}
